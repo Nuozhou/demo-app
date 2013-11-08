@@ -28,12 +28,12 @@
     left: 0;
     height: 15px;
     z-index: 2;
-    border-bottom: 1px solid #6c615c;
-    background: #8d7d77;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(132, 110, 100, 0.8)),to(rgba(101, 84, 76, 0.8)));
-    background: -webkit-linear-gradient(top, rgba(132, 110, 100, 0.8), rgba(101, 84, 76, 0.8));
-    background: linear-gradient(top, rgba(132, 110, 100, 0.8), rgba(101, 84, 76, 0.8));
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#9d8b83', EndColorStr='#847670');
+    border-bottom: 1px solid #3E8ACC;
+    background: #74A3CC;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(20,119, 204, 0.8)),to(rgba(116, 163, 204, 0.8)));
+    background: -webkit-linear-gradient(top, rgba(20,119, 204, 0.8), rgba(116, 163, 204, 0.8));
+    background: linear-gradient(top, rgba(20,119, 204, 0.8), rgba(116, 163, 204, 0.8));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#3E8ACC', EndColorStr='#74A3CC');
     border-top-left-radius: 1px;
     border-top-right-radius: 1px;
 }
@@ -156,8 +156,8 @@ label[for='toggle-all'] {
     /* 40 + a couple of pixels visual adjustment */
     line-height: 43px;
     font-size: 20px;
-    color: #3E8ACC;
-    text-shadow: 0 -1px 0 #3E8ACC;
+    color: #d9d9d9;
+    text-shadow: 0 -1px 0 #bfbfbf;
 }
 
 #todo-list li .toggle:checked:after {
@@ -225,7 +225,7 @@ label[for='toggle-all'] {
 #footer {
     color: #777;
     padding: 0 15px;
-    position: absolute;
+    /*position: absolute;*/
     right: 0;
     bottom: -31px;
     left: 0;
@@ -280,20 +280,20 @@ label[for='toggle-all'] {
 #clear-completed {
     float: right;
     position: relative;
-    line-height: 20px;
+/*    line-height: 20px;
     text-decoration: none;
     background: rgba(0, 0, 0, 0.1);
     font-size: 11px;
     padding: 0 10px;
     border-radius: 3px;
     box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.2);
-}
-
+*/}
+/*
 #clear-completed:hover {
     background: rgba(0, 0, 0, 0.15);
     box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.3);
 }
-
+*/
 #info {
     margin: 65px auto 0;
     color: #a6a6a6;

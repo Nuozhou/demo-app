@@ -2,7 +2,7 @@
 
 angular.module('todoApp').controller('MainCtrl', 
     function ($scope, $location, todoStorage, filterFilter) {
-  var todos = $scope.todos = todoStorage.get();
+  var todos = $scope.todos = [];
   $scope.newTodo = '';
   $scope.editedTodo = null;
 
@@ -14,6 +14,12 @@ angular.module('todoApp').controller('MainCtrl',
       todoStorage.put(todos);
     }
   }, true);
+
+  todoStorage.get().then(function (data) {
+    todos = $scope.todos = data;
+    console.log("Received data");
+    console.log(data);
+  });
 
   if ($location.path() === '') {
     $location.path('/');
